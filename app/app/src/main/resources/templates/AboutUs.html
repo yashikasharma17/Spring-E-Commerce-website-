@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About us </title>
+    
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+   <style class="text/css">
+    .intro-section{
+        background-color: khaki;
+        color:black;
+        text-align: center;
+        padding:100px 20px;
+    }
+    .team-member{
+        color:rgb(211, 198, 82);
+        
+    }
+    .col-md-4{
+        text-align: center;
+    }
+   </style>
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand me-5" href="@{/}">E-commerce app</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item me-5">
+          <a class="nav-link active " aria-current="page" th:href="@{/home}">Home</a>
+        </li>
+        <li class="nav-item me-5">
+          <a class="nav-link" th:href="@{/products}">Products</a>
+        </li>
+        <li class="nav-item me-5">
+            <a class="nav-link" th:href="@{/contact}">Contact us</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" th:href="@{/aboutUs}">About us</a>
+          </li>
+          
+      </ul>
+      <form class="d-flex" role="search">
+        <a th:href="@{/login}" class="btn btn-success">Login</a>
+
+      </form>
+    </div>
+  </div>
+</nav>
+<div>
+    <section class="intro-section">
+        <div class="container">
+            <h1>Welcome to my website</h1>
+            <p class="lead">It is an e-commerce site selling your wishful products</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+           <div class="row">
+            <div class="col-lg-6">
+                <h2>About us</h2>
+                <br>
+                <p class="lead">Since 2024, it has been your trusted destination for top-quality products and seamless online shopping</p>
+                <p class="lead">We are a passionate team dedicated to bringing you the best products at unbeatable prices. Here, we believe in quality, trust, and a seamless shopping experience.</p>
+            </div>
+            <div class="col-lg-6 text-centre">
+                <i class="bi bi-buildings-fill" style="font-size: 150px; padding:10px" ></i>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-centre team-member">
+                    <i class="bi bi-person-circle" style="font-size: 150px"></i>
+                    <h4>Yashika Sharma</h4>
+                    <p>CEO</p>
+                </div>
+                <div class="col-md-4 text-centre team-member">
+                    <i class="bi bi-person-circle" style="font-size: 150px"></i>
+                    <h4>Priya Aggarwal</h4>
+                    <p>CTO</p>
+                </div>
+                <div class="col-md-4 text-centre team-member">
+                    <i class="bi bi-person-circle" style="font-size: 150px"></i>
+                    <h4>Manish Sidhu</h4>
+                    <p>COO</p>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+   
+</body>
+</html>
